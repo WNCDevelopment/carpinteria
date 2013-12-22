@@ -32,12 +32,11 @@ class Photo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, description, file_name, id_album', 'required'),
+			array('name, description, id_album', 'required'),
 			array('id_album', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>255),
 			array('updated', 'safe'),
-                        array('file_name', 'file', 'types' => 'jpg,jpeg,gif,png', 'maxSize' => 1024 * 1024 * 10, 'tooLarge' => 'La imagen debe pesar menos de 10MB !!!', 'on' => 'upload'),
-
+                        array('file_name', 'file', 'types' => 'jpg,jpeg,gif,png', 'maxSize' => 1024 * 1024 * 10, 'tooLarge' => 'La imagen debe pesar menos de 10MB !!!' ,'allowEmpty' => true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, description, file_name, updated, id_album', 'safe', 'on'=>'search'),
