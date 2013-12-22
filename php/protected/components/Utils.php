@@ -43,4 +43,19 @@ class Utils{
 			return array();
 		}
 	}
+        
+	public static function sendMail($view, $subject, $to = array(), $params = array(), $from = array()) {
+		$message = New YiiMailMessage();
+		$message->view = $view;
+		//$message->viewExtension = '.html';
+		$message->setBody($params, 'text/html', 'UTF-8');
+		$message->setSubject($subject);
+		if (count($from)) {
+			$message->setFrom($from);
+		} else {
+			$message->setFrom(array(Yii::app()->params['noreplyEmail']=> Yii::app()->params['noreplyName']));
+		}
+		$message->setTo($to);
+		return Yii::app()->mail->send($message);
+	}
 }

@@ -40,7 +40,19 @@ return array(
             'loginUrl' => array('session/new'),
             'returnUrl' => 'album/admin',
         ),
-        
+        'mail'=> array(
+            'class'=> 'application.extensions.yii-mail.YiiMail',
+            'transportType'=> 'smtp',
+            'transportOptions'=> array(
+                'host'=> 'smtp.gmail.com',
+                'username'=> 'rowasc@gmail.com',
+                'password'=> 'uopitiaca1990',
+                'port'=> '465',
+                'encryption'=> 'tls'
+            ),
+            'logging'=> true,
+            'dryRun'=> false
+        ),
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
             'urlFormat' => 'path',
