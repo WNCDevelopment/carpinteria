@@ -27,11 +27,19 @@
                     'class' => 'bootstrap.widgets.TbMenu',
                     'htmlOptions' => array('class' => 'pull-right'),
                 ),
+                    
+                array(
+                    'label' => 'Albums',
+                    'url' => array('album/admin'),
+                    'visible' => !Yii::app()->user->isGuest
+                ),
+                
                 array(
                     'label' => 'Logout (' . Yii::app()->user->name . ')',
                     'url' => array('session/destroy'),
                     'visible' => !Yii::app()->user->isGuest
                 ),
+            
             ),
         ),
     ),

@@ -3,6 +3,7 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/bootstrap');
+Yii::setPathOfAlias('uploads', dirname(__FILE__) . '/../../uploads/');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
@@ -39,6 +40,7 @@ return array(
             'loginUrl' => array('session/new'),
             'returnUrl' => 'album/admin',
         ),
+        
         // uncomment the following to enable URLs in path-format
         'urlManager' => array(
             'urlFormat' => 'path',

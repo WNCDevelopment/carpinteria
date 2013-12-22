@@ -18,16 +18,14 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('file_name')); ?>:</b>
-	<?php echo CHtml::encode($data->file_name); ?>
+        <img src="../../<?php echo CHtml::encode($data->file_name); ?>"/>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('updated')); ?>:</b>
 	<?php echo CHtml::encode($data->updated); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_album')); ?>:</b>
+        
+        <b><a href="<?php echo Yii::app()->createUrl('album/view',array('id'=>$data->id_album)); ?>">Ir al album</a></b>
 	<?php echo CHtml::encode($data->id_album); ?>
 	<br />
-
-
 </div>

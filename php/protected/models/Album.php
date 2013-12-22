@@ -60,10 +60,10 @@ class Album extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'description' => 'Description',
-			'published' => 'Published',
-			'updated' => 'Updated',
+			'name' => 'Titulo',
+			'description' => 'Descripcion',
+			'published' => 'Publicado',
+			'updated' => 'Actualizado el...',
 		);
 	}
 
@@ -95,7 +95,9 @@ class Album extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-
+        public function getPhotos(){
+            return $this->photos;
+        }
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!

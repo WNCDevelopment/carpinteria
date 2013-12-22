@@ -9,7 +9,7 @@ class SessionController extends Controller
 	{
 		// If user is already logged in redirect him to index
 		if(!Yii::app()->user->isGuest)
-			$this->redirect($this->createUrl('index/index'));
+			$this->redirect($this->createUrl('/'));
 
 		$model=new LoginForm;
 
@@ -26,7 +26,7 @@ class SessionController extends Controller
 			// validate user input and redirect to the previous page if valid
 
 			if($model->validate() && $model->login())
-				$this->redirect($this->createUrl('default/index'));
+				$this->redirect(Yii::app()->user->returnUrl);
 		}
 		// display the login form
 		$this->render('new',array('model'=>$model));

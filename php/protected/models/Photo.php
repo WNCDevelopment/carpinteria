@@ -36,6 +36,8 @@ class Photo extends CActiveRecord
 			array('id_album', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>255),
 			array('updated', 'safe'),
+                        array('file_name', 'file', 'types' => 'jpg,jpeg,gif,png', 'maxSize' => 1024 * 1024 * 10, 'tooLarge' => 'La imagen debe pesar menos de 10MB !!!', 'on' => 'upload'),
+
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, description, file_name, updated, id_album', 'safe', 'on'=>'search'),
@@ -61,11 +63,11 @@ class Photo extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'description' => 'Description',
-			'file_name' => 'File Name',
+			'name' => 'Titulo',
+			'description' => 'Descripcion',
+			'file_name' => 'Foto',
 			'updated' => 'Updated',
-			'id_album' => 'Id Album',
+			'id_album' => 'Album',
 		);
 	}
 

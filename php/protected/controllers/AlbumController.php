@@ -2,6 +2,7 @@
 
 class AlbumController extends Controller
 {
+        public static $DEFAULT_ALBUM=2;
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -32,12 +33,8 @@ class AlbumController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','apiFullAlbum','admin','delete'),
 				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -170,4 +167,22 @@ class AlbumController extends Controller
 			Yii::app()->end();
 		}
 	}
+        /**
+         * Returns album and its photos
+         * @param type $id
+         */
+        public function actionApiFullAlbum($id=null){
+            $return=array();
+            $album=null;
+            
+            if (!$id){
+                $album=Album::model()->with('photos')->findByPk(self::$DEFAULT_ALBUM);
+            }else{
+                $album=Album::model()->with('photos')->findByPk($id);
+            }
+            if ($album){                    
+                $return=Utils::jsonReadyModel($album);
+            }
+            echo json_encode($return);
+        }
 }
