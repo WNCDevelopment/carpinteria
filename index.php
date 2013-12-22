@@ -52,8 +52,13 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
                                     <h4 class="modal-title" id="myModalLabel">Contacto</h4>
+                                    <div class="info-contacto">
+                                        <h5>Telefono: 099890924</h5>
+                                        <button type="button" class="btn btn-primary show-map" data-toggle="modal" data-target="#mapa">Ver en mapa</button>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="modal-body">
                                     <form role="form" >
@@ -79,6 +84,25 @@
                             </div><!-- /.modal-content -->
                         </div><!-- /.modal-dialog -->
                     </div><!-- /.modal -->
+                    <div class="modal fade" id="mapa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">Mapa</h4>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="mapa-wrapper" class="fluid-wrapper">
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
