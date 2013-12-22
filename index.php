@@ -71,20 +71,25 @@
                         <h4 class="modal-title" id="myModalLabel">Contacto</h4>
                     </div>
                     <div class="modal-body">
-                        <form role="form">
+                        <form role="form" >
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <label for="message">Mensaje</label>
-                                <textarea class="form-control" id="message"></textarea>
+                                <label for="telefono">Telefono</label>
+                                <input type="telefono" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                             </div>
                         </form>
+                        <div id="respuesta"></div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary contact-send">Enviar</button>
+                        <button type="button" id="contact-send" class="btn btn-primary contact-send">Enviar</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->

@@ -17,6 +17,8 @@ return array(
         'application.models.*',
         'application.components.*',
         'application.extensions.*',
+        
+		'application.extensions.yii-mail.*',
     ),
     'theme' => 'bootstrap', // requires you to copy the theme under your themes directory
     'modules' => array(
@@ -46,7 +48,7 @@ return array(
             'transportOptions'=> array(
                 'host'=> 'smtp.gmail.com',
                 'username'=> 'rowasc@gmail.com',
-                'password'=> 'uopitiaca1990',
+                'password'=> 'J19U02A79N',
                 'port'=> '465',
                 'encryption'=> 'tls'
             ),
@@ -97,5 +99,6 @@ return array(
     'params' => array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
+        'noReplyEmail' =>'rowasc@gmail.com'
     ),
 );

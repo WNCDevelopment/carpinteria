@@ -661,3 +661,200 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/carpinteria/php/index.php/album/apiFullAlbum
 ---
+2013/12/22 16:28:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact/enviar".' in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact/enviar')
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+---
+2013/12/22 16:48:59 [error] [php] Undefined index: celular (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php:8)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php (8)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php (13)
+2013/12/22 16:50:36 [error] [php] Undefined variable: telefono (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php:10)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php (10)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php (13)
+2013/12/22 16:50:49 [error] [php] Undefined variable: telefono (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php:10)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php (10)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php (13)
+2013/12/22 16:51:07 [error] [php] include(YiiMailMessage.php): failed to open stream: No such file or directory (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(48): spl_autoload_call()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(10): sendMail()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php (48)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php (10)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php (13)
+2013/12/22 16:52:11 [error] [php] Undefined variable: celular (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/views/mail/contacto.php:12)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(51): YiiMailMessage->setBody()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(10): sendMail()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/views/mail/contacto.php (12)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMailMessage.php (143)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php (51)
+2013/12/22 16:52:35 [error] [exception.Swift_RfcComplianceException] exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [] does not comply with RFC 2822, 3.6.2.' in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php:309
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(239): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('')
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(97): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(61): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/SimpleMimeEntity.php(571): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/SimpleMessage.php(199): Swift_Mime_SimpleMimeEntity->_setHeaderFieldModel('From', Array)
+#5 [internal function]: Swift_Mime_SimpleMessage->setFrom(Array)
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMailMessage.php(94): call_user_func_array(Array, Array)
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(56): YiiMailMessage->__call('setFrom', Array)
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(56): YiiMailMessage->setFrom(Array)
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(10): Utils::sendMail('contacto', 'Consulta Web de...', 'rowasc@gmail.co...', Array)
+#10 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#11 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): CController->run('enviar')
+#15 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact/enviar')
+#16 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+HTTP_REFERER=http://localhost/carpinteria/index.php
+---
+2013/12/22 17:00:16 [error] [php] Undefined variable: email (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/views/mail/contacto.php:11)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(52): YiiMailMessage->setBody()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(10): sendMail()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/views/mail/contacto.php (11)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMailMessage.php (143)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php (52)
+2013/12/22 17:01:30 [error] [php] Undefined variable: email (/home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/views/mail/contacto.php:11)
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(52): YiiMailMessage->setBody()
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(10): sendMail()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): ContactController->runAction()
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): ContactController->runActionWithFilters()
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): ContactController->run()
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CWebApplication->run()
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/views/mail/contacto.php (11)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMailMessage.php (143)
+in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php (52)
+2013/12/22 17:04:00 [error] [exception.Swift_RfcComplianceException] exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [] does not comply with RFC 2822, 3.6.2.' in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php:309
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(239): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('')
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(97): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(61): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/SimpleMimeEntity.php(571): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/SimpleMessage.php(199): Swift_Mime_SimpleMimeEntity->_setHeaderFieldModel('From', Array)
+#5 [internal function]: Swift_Mime_SimpleMessage->setFrom(Array)
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMailMessage.php(94): call_user_func_array(Array, Array)
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(57): YiiMailMessage->__call('setFrom', Array)
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(57): YiiMailMessage->setFrom(Array)
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(11): Utils::sendMail('contacto', 'Consulta Web de...', 'rowasc@gmail.co...', Array)
+#10 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#11 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): CController->run('enviar')
+#15 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact/enviar')
+#16 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+HTTP_REFERER=http://localhost/carpinteria/index.php
+---
+2013/12/22 17:04:45 [error] [exception.Swift_RfcComplianceException] exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [] does not comply with RFC 2822, 3.6.2.' in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php:309
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(239): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('')
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(97): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/Headers/MailboxHeader.php(61): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/SimpleMimeEntity.php(571): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mime/SimpleMessage.php(199): Swift_Mime_SimpleMimeEntity->_setHeaderFieldModel('From', Array)
+#5 [internal function]: Swift_Mime_SimpleMessage->setFrom(Array)
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMailMessage.php(94): call_user_func_array(Array, Array)
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(57): YiiMailMessage->__call('setFrom', Array)
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(57): YiiMailMessage->setFrom(Array)
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(11): Utils::sendMail('contacto', 'Consulta Web de...', 'rowasc@gmail.co...', Array)
+#10 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#11 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): CController->run('enviar')
+#15 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact/enviar')
+#16 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+HTTP_REFERER=http://localhost/carpinteria/index.php
+---
+2013/12/22 17:05:03 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "rowasc@gmail.com" using 2 possible authenticators' in /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Transport/Esmtp/AuthHandler.php:179
+Stack trace:
+#0 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Transport/EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Transport/AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/vendors/swiftMailer/classes/Swift/Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/extensions/yii-mail/YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/components/Utils.php(60): YiiMail->send(Object(YiiMailMessage))
+#5 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/protected/controllers/ContactController.php(11): Utils::sendMail('contacto', 'Consulta Web de...', 'rowasc@gmail.co...', Array)
+#6 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/actions/CInlineAction.php(49): ContactController->actionEnviar()
+#7 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(282): CController->run('enviar')
+#11 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact/enviar')
+#12 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/romina/Documents/Workspace/sitioCarpinteriaHtml/php/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/carpinteria/php/index.php/contact/enviar
+HTTP_REFERER=http://localhost/carpinteria/index.php
+---

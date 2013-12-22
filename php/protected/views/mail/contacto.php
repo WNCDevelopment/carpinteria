@@ -2,17 +2,11 @@
 	<head>
 	</head>
 	<body>            
-		<table>
-			<tr>
-                            <td>Email</td>
-                            <td>Celular</td>
-                        </tr>                        
-			<tr>
-                            <td><?php echo $email; ?></td>
-                            <td><?php echo $celular; ?></td>
-                        </tr>
-                        <tr><?php echo $mensaje ; ?></tr>
-		</table>
+		
+                    <h2>Email:</h2><?php echo $email; ?>
+                    <h2>Telefono:</h2><?php echo $telefono; ?>
+                    <h2>Mensaje:</h2>        <?php echo $mensaje ; ?>                    
+
             
 	</body>
 </html>

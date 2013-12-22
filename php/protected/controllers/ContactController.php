@@ -1,14 +1,15 @@
 <?php
-class ContactController{
+class ContactController extends Controller{
     public static $ENVIAR_A="rowasc@gmail.com";
     public function actionEnviar(){
         $success=false;                
-        if (isset($_POST["contact"])){            
-            $email=$_POST['contact']['email'];
-            $celular=$_POST['contact']['celular'];
-            $mensaje=$_POST['contact']['mensaje'];
-            $success=Utils::sendMail('contacto', 'Consulta Web de '.$email,self::ENVIAR_A,array('email'=>$email,'celular'=>$celular,'mensaje'=>$mensaje));
+        if (isset($_POST["email"]) && isset($_POST['mensaje']) && isset($_POST['telefono'])){            
+            $email=$_POST['email'];
+            $telefono=$_POST['telefono'];
+            $mensaje=$_POST['mensaje'];
+            $form=array('email'=>$email,'telefono'=>$telefono,'mensaje'=>$mensaje);
+            $success=Utils::sendMail('contacto', 'Consulta Web de '.$email,self::$ENVIAR_A,$form);
         }
-        echo array('success'=>$success);
+        echo json_encode(array('success'=>$success));
     }
 }

@@ -45,6 +45,7 @@ class Utils{
 	}
         
 	public static function sendMail($view, $subject, $to = array(), $params = array(), $from = array()) {
+           
 		$message = New YiiMailMessage();
 		$message->view = $view;
 		//$message->viewExtension = '.html';
@@ -53,7 +54,7 @@ class Utils{
 		if (count($from)) {
 			$message->setFrom($from);
 		} else {
-			$message->setFrom(array(Yii::app()->params['noreplyEmail']=> Yii::app()->params['noreplyName']));
+			$message->setFrom(array(Yii::app()->params['noReplyEmail']=> Yii::app()->params['noReplyEmail']));
 		}
 		$message->setTo($to);
 		return Yii::app()->mail->send($message);
