@@ -24,39 +24,21 @@
                 </div>
             </div>
             <div class="row">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="slideshow-principal" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      
                     </ol>
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="http://mybuilder-uploads.s3.amazonaws.com/2_thumb/463529_fda30284db.jpg" >
-                            <div class="carousel-caption">
-                                <p>
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tempor euismod ante, non scelerisque augue lobortis ac. Donec gravida dignissim blandit. Nam egestas, ante ut condimentum gravida, enim quam consectetur ipsum, a tempus arcu nisi vitae mi. Fusce vitae consectetur risus, id dictum metus. Nulla sed suscipit nunc, et rutrum tortor. In vel nisi nisi. Pellentesque quis massa ante. Proin eget sapien egestas risus ullamcorper ultrices sit amet nec enim. Ut condimentum nibh et sagittis congue. Nulla aliquam condimentum consectetur. Phasellus imperdiet malesuada risus, vel porta nisi consequat non.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="http://mybuilder-uploads.s3.amazonaws.com/2_thumb/463529_fda30284db.jpg" >
-                            <div class="carousel-caption">
-                                <p>
-                                    Fusce dictum leo non orci gravida sagittis. Maecenas congue nisl quis ante pharetra ullamcorper. Nunc eget dictum tortor. Integer imperdiet mollis leo nec facilisis. Donec sed est purus. Fusce et diam ut sem varius convallis ornare sed ante. Aliquam quis viverra felis. Praesent ac faucibus justo, facilisis tempor augue. Suspendisse potenti. Praesent fermentum lorem a sem lacinia, ut tempus justo blandit.
-                                </p>
-                            </div>
-                        </div>
+                    
                     </div>
 
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <a class="left carousel-control" href="#slideshow-principal" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <a class="right carousel-control" href="#slideshow-principal" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
