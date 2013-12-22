@@ -1,0 +1,77 @@
+* { padding: 0; margin: 0; border: none; text-decoration: none; }
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bn.eot');
+    src: url('../fonts/bn.eot') format('embedded-opentype'),
+         url('../fonts/bn.woff') format('woff'),
+         url('../fonts/bn.ttf') format('truetype'),
+         url('../fonts/bn.svg#BebasNeueRegular') format('svg');
+}
+
+html,body{
+    min-height: 100%;
+
+}
+.main.container{
+    background:#000 url('../images/background-wood.png') repeat center center;
+    min-height:100%;
+    position:relative;
+}
+.header {
+    /**background:url('../images/top_shadow.jpg') no-repeat center top;**/
+
+}
+.header .transparent{
+    height: 80px;
+}
+.album{
+    position:relative;    
+}
+.album img{
+    width: 100%;
+}
+img{ display: block;}
+
+.album ul{
+    width: 68%;
+    margin: 0 auto;
+    display: block;
+    border: 10px solid #2b1b16;
+    border-radius: 12px;
+    list-style: none;
+    
+    
+}
+.album .btn-prev{
+    position: absolute;
+    top: 50%;
+    margin-top: -44px;
+    left: 80px;
+}
+
+.album .btn-next{    
+    position: absolute;
+    top: 50%;
+    margin-top: -44px;
+    right: 80px;
+}
+.transparent{
+    margin:0 auto;
+    width:1024px;
+}
+.header .logo {
+    font-family: BebasNeueRegular;
+    font-size: 20px;
+    color: #2b1b16;
+    display: block;
+    margin-left: 16%;
+
+}
+.contact-icon{
+    position: absolute;
+    right: 18%;
+    top: 4px;
+}
+.contact-icon img{
+    width:43px;
+}
